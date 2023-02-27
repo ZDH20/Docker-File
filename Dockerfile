@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 RUN mkdir /app
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+COPY DataWarehouse.egg-info/requires.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
